@@ -20,6 +20,12 @@ def Predict(word,numword):
         if w not in stop_words:
             filtered_word.append(w)
 
+    phrase   = ['made','make']
+
+    for word in list(filtered_word):  # iterating on a copy since removing will mess things up
+        if word in phrase:
+            filtered_word.remove(word)
+
     lm = nltk.WordNetLemmatizer()
 
     def lemmatize(data):
