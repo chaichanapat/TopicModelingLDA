@@ -1,0 +1,2 @@
+phrase = ['made', 'make','programmer']
+    
