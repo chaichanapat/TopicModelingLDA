@@ -5,7 +5,7 @@ import TopicModelingLDA as tla
 # Exo's first album XOXO (2013), released alongside breakthrough single "Growl", was a critical and commercial success; it sold over one million copies, which made Exo the first Korean artist to do so in twelve years. Their later works also had strong sales, with their Korean studio albums each selling over one million copies. Exo's sixth album, Don't Mess Up My Tempo (2018), became their highest-charting album on the US Billboard 200, debuting at number 23, and their best selling album in South Korea, where it sold over 1.9 million copies.
 # Exo have won numerous awards throughout their career, including five consecutive Album of the Year awards at the Mnet Asian Music Awards and two consecutive Artist of the Year awards at the Melon Music Awards, and have performed over 100 concerts across four headlining tours and multiple joint tours. Outside of music, the band members have endorsement deals with brands such as Nature Republic and Samsung and participate in philanthropic efforts such as Smile For U, an ongoing project by SM Entertainment and UNICEF that began in 2015."""
 
-word = "made made made make make makes make made programmers programmers programmers programmers programmer programmings programmings programmings programmings computers computers computer"
+word = "made made made make make makes make programmers programmers programmers programmers programmer programmings programmings programmings programmings computers computers computer"
 
 numword = 4
 

@@ -5,7 +5,7 @@ import re
 import json
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
-
+import dictionary as dict
 
 def Predict(word,numword):
 
@@ -20,23 +20,23 @@ def Predict(word,numword):
         if w not in stop_words:
             filtered_word.append(w)
 
-    phrase   = ['made','make']
-
-    for word in list(filtered_word):  # iterating on a copy since removing will mess things up
-        if word in phrase:
-            filtered_word.remove(word)
-
     lm = nltk.WordNetLemmatizer()
 
     def lemmatize(data):
-       text = [[lm.lemmatize(word) for word in data]]
+       text = [lm.lemmatize(word) for word in data]
        return text
 
-    word = lemmatize(filtered_word)
+    word3 = lemmatize(filtered_word)
+    
+    for word in list(word3):  # iterating on a copy since removing will mess things up
+        if word in dict.phrase:
+            word3.remove(word)
 
-    id2word = corpora.Dictionary(word)
+    word3 = [word3]
 
-    corpus = [id2word.doc2bow(text) for text in word]
+    id2word = corpora.Dictionary(word3)
+
+    corpus = [id2word.doc2bow(text) for text in word3]
 
     num_topics = 1
 
