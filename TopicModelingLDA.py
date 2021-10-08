@@ -10,7 +10,6 @@ import dictionary as dict
 def Predict(word,numword):
 
     word          = re.sub(r'[^\w\s]', '', word).lower()
-
     stop_words    = set(stopwords.words('english'))
     word_tokens   = word_tokenize(word)
 
