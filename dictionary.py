@@ -1,2 +1,2 @@
-phrase = ['made', 'make','programmer']
+phrase = ['made', 'make','may']
     
